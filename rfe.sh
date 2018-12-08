@@ -1,10 +1,9 @@
 #!/bin/bash
 # rfe.sh: 重命名文件扩展名.
 
-# 用法: rfe old_extension new_extension 5#
+# 用法: rfe old_extension new_extension
 
-
-# 用法: rfe gif jpg 9
+# 用法: rfe gif jpg
 # 例子:
 # 将指定目录的所有 *.gif 文件都重命名为 *.jpg,
 
