@@ -1,0 +1,4 @@
+echo -n ♠|hexdump
+echo -n ♥|hexdump
+echo -n ♦|hexdump
+echo -n ♣|hexdump
