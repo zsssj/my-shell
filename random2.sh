@@ -6,7 +6,7 @@ AWKSCRIPT=' { srand(); print rand() } '
 # Command(s) / 传到 awk 中的参数
 # 注意,srand()函数用来产生 awk 的随机数种子.
 
-echo -n "Random number between 0 and 1 = "
+echo "Random number between 0 and 1 = \c"
 
 echo | awk "$AWKSCRIPT"
 # 如果你省去'echo'那么将发生什么?
