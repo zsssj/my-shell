@@ -41,7 +41,7 @@ OLDIFS=$IFS
 IFS=:
 
 for file in $(find $directory -type l -printf "%p$IFS")
-do # 
+do              # 
     echo "$file"
 done|sort
 
