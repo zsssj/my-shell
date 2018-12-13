@@ -1,16 +1,15 @@
-#!/bin/bash
+#!/bin/bash 
 
-PS3='Choose your favorite vegetable: '  # 设置提示符字串. 
+a1=11
+a2=22
+a3=33
 
-echo
-
-select vegetable in "beans" "carrots" "potatoes" "onions" "rutabagas" 
+for i in `seq 3`
 do
-    echo
-    echo "Your favorite veggie is $vegetable." 
-    echo "Yuck!"
-    echo
-    break   # 如果这里没有'break'会发生什么?
+    echo $i #1 2 3
+    echo ${!"a$i"}    
+#    eval "echo \$$(echo a${i})"
 done
 
 exit 0
+
