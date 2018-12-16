@@ -1,15 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
 function echo_color() {
     case $1 in
         green)
-            echo "\033[32;47m$2\033[0m"
+            echo -e "\033[32;47m$2\033[0m"
             ;;
         red)
-            echo "\033[31;47m$2\033[0m"
+            echo -e "\033[31;47m$2\033[0m"
             ;;
         *)
-            echo "Example: echo_color red string"
+            echo "Example: color.sh red string"
     esac
 }
 
