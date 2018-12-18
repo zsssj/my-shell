@@ -1,19 +1,10 @@
 #!/bin/bash
-# test.sh
 
-a=$(expr 3 + 1)
-a=$(expr \( $a \) + 1)
-echo "a + 1 = $a"
-
-a=1234zipper4321
-#export a
-
-echo "The string being operated upon is \"$a\"."
-
-b=$(expr \( "X$a" : ".*" \) - 1)
-echo $b 
-
-c=$(expr length " $a")
-echo "Length of \"$a\" is $c."
+a=/home/bozo/daily-journal.txt
+echo "Basename of /home/bozo/daily-journal.txt = `basename $a`"
+echo "Dirname of /home/bozo/daily-journal.txt = `dirname $a`"
+echo
+echo "My own home is `basename ~/`." # `basename ~` also works.
+echo "The home of my home is `dirname ~/`." # `dirname ~` also works.
 
 exit 0
