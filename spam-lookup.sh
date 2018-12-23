@@ -12,7 +12,7 @@ then
 fi
 
 
-dig +short $1.contacts.abuse.net -c in -t txt
+dig +short $1.contacts.abuse.net -c IN -t txt
 # 也试试:
 #   dig +nssearch $1
 #   尽量找到 "可信赖的名字服务器" 并且显示 SOA 记录.

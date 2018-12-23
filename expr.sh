@@ -2,6 +2,7 @@
 # expr.sh
 # 展示一些 'expr'的使用
 # =====================
+set -x
 
 echo 
 
@@ -75,7 +76,7 @@ a=1234zipper43231
 echo "The string being operated upon is \"$a\"."
 
 # 长度: 字符串长度
-b=`expr length $a`
+b=`expr "length" $a`
 echo "Length of \"$a\" is $b."
 
 # 索引: 从字符串的开头查找匹配的子串,

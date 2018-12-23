@@ -1,10 +1,8 @@
 #!/bin/bash
 
-a=/home/bozo/daily-journal.txt
-echo "Basename of /home/bozo/daily-journal.txt = `basename $a`"
-echo "Dirname of /home/bozo/daily-journal.txt = `dirname $a`"
-echo
-echo "My own home is `basename ~/`." # `basename ~` also works.
-echo "The home of my home is `dirname ~/`." # `dirname ~` also works.
+set -x
 
-exit 0
+var1=$(echo "scale=4;3.44/5" |bc )
+echo $var1
+
+echo oldboy{1..3}.txt
