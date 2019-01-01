@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#----------------------------------------------------------
+#-function===========-*/
 function echo_color() {
     case $1 in
         green)
@@ -9,11 +11,11 @@ function echo_color() {
             echo -e "\033[31;47m$2\033[0m"      # red[FG],white[BG]
             ;;
         *)
-            echo "Example: color.sh red string" # others
+            echo "Example: echo_color red string" # others
     esac
 }
-
-set +x
+#----------------------------------------------------------
+set +x      # debug on/off
 clear       # clear screen
 while true  # inifinite loop
 do
